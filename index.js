@@ -54,12 +54,16 @@ search.addEventListener('click', () => {
                     image.src = 'images/snow.png';
                     break;
 
-                case 'Clouds':
-                    image.src = 'images/cloud.png';
-                    break;
+                    case 'Clouds':
+                        if (hour >= 6 && hour < 18) {
+                            image.src = "images/cloud.png";
+                          } else {
+                            image.src = "images/night.png";
+                          }
+                          break;
 
                 case 'Haze':
-                    image.src = 'images/mist.png';
+                    image.src = 'images/fog.png';
                     break;
                 case 'Mist':
                     image.src = 'images/mist.png';
