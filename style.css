@@ -48,6 +48,8 @@ body{
     font-weight: 500;
     color: #06283D;
     text-transform: capitalize;
+    font-family: monospace;
+    opacity: 0.7;
 }
 
 .search-box button{
